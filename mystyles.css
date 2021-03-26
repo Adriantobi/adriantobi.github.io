@@ -67,6 +67,8 @@ button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
+:focus { outline: none; }
+
 .labels {
     display: inline-block; 
     margin-left: 30px; 
