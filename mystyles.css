@@ -77,6 +77,9 @@ button:hover {
     height: auto; 
     padding: 10px;
     border-radius: 20px;
+    overflow: hidden;
+    object-fit: contain;
+    text-align: center;
 }
 
 #images{ text-align: center; }
@@ -95,6 +98,7 @@ h1 {
     font-size: 55px;
     color: #edf0f1;
     text-decoration: none;
+    text-align: center;
 }
 
 .contact {
