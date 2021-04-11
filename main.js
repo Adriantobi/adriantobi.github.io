@@ -16,8 +16,8 @@ navLink.forEach(item => {
         if ( menuBtn.classList.contains("open")) {
             toggle;
         }
-    })
-})
+    });
+});
 
 function toggle() {
     menuBtn.classList.toggle("open");
