@@ -259,8 +259,8 @@ h1 {
     }
 
     .labels {
-        right: auto;
-        left: auto;
+        margin-right: auto;
+        margin-left: 15px;
     }
 }
 
