@@ -220,7 +220,7 @@ h1 {
         right: 0;
         left: 0;
         height: 100vh;
-        transform: translateX(1000vw);
+        transform: translateX(100vw);
         background-color: #000;
         transition: transform 0.3s ease-in-out;
     }
