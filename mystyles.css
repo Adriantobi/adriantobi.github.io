@@ -109,10 +109,12 @@ button:hover {
 
 .menu-btn.open .menu-btn__lines::before {
     transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    background-color: #edf0f1;
 }
 
 .menu-btn.open .menu-btn__lines::after {
     transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    background-color: #edf0f1;
 }
 
 
@@ -201,8 +203,7 @@ h1 {
     width: 100%; 
     height: 820px; 
     border: none; 
-    overflow: hidden; 
-    background: #000;
+    overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -225,8 +226,8 @@ h1 {
         right: 0;
         left: 0;
         height: 100vh;
-        transform: translateX(100vh);
-        background-color: #CFD8DC;
+        transform: translateX(100vw);
+        background-color: #000;
         transition: transform 0.3s ease-in-out;
     }
 
@@ -236,14 +237,15 @@ h1 {
 
     .nav__links li {
         width: 100vw;
-        height: 100%;
-    }
-
+        height: 15%;
+    }    
+      
     .nav__links li a {
-        color: #CFD8DC;
+        color: #edf0f1;
         font-size: 2vh;
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100%;
     }
