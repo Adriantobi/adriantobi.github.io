@@ -276,6 +276,12 @@ h1 {
     }
 }
 
+@media (min-width: 768px) {
+    .contactIng {
+       display: none;
+    }
+}
+
 
 body::-webkit-scrollbar {
   width: 11px;               /* width of the entire scrollbar */
