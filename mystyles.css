@@ -285,15 +285,15 @@ h1 {
     }
 
     #container {
-        overflow-x:hidden;
-        width:100%;
-        position:relative;
-        top:7vh;
-        height:53vh;
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+        top: 0vh;
+        height: 100vh;
     }
 
     #main {
-        top:0;
+        top: 0;
       }
 }
 
