@@ -219,7 +219,7 @@ h1 {
         top: 0;
         right: 0;
         left: 0;
-        height: 100vh;
+        height: 90vh;
         transform: translateX(100vw);
         background-color: #000;
         transition: transform 0.3s ease-in-out;
@@ -249,11 +249,7 @@ h1 {
     html, body {
         overflow-x: hidden;
     }
-      
-    body {
-        position: relative
-    }
-
+    
     #projects {
         flex-direction: column;
     }
