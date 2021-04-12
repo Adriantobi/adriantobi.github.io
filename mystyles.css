@@ -246,9 +246,12 @@ h1 {
         height: 100%;
     }
 
-    * {
+    html, body {
         overflow-x: hidden;
-        max-width: 100%;
+    }
+      
+    body {
+        position: relative
     }
 
     #projects {
