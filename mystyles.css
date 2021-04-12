@@ -208,6 +208,11 @@ h1 {
 
 /* media query for mobile devices */
 @media (max-width: 767px) {
+    .logo {
+        left: 25px;
+        border: 3px;
+    }
+
     .menu-btn {
         display: flex;
     }
