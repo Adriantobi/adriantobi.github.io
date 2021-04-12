@@ -276,7 +276,7 @@ h1 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .contactIng {
        display: none;
        opacity: 0;
