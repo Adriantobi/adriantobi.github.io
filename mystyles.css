@@ -228,7 +228,6 @@ h1 {
         transform: translateX(100vw);
         background-color: #000;
         transition: transform 0.3s ease-in-out;
-        z-index: 1;
     }
 
     .nav__links.open {
