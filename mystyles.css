@@ -133,7 +133,7 @@ button:hover {
     max-width: 330px;
     max-height: 330px;
     height: auto; 
-    padding: 10px;
+    padding: 0px;
     border-radius: 20px;
     overflow: hidden;
     object-fit: contain;
@@ -152,7 +152,7 @@ button:hover {
     max-width: 330px;
     max-height: 330px;
     height: auto; 
-    padding: 10px;
+    padding: 0px;
     border-radius: 20px;
     overflow: hidden;
     object-fit: contain;
