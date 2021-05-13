@@ -35,14 +35,7 @@ header {
     left: 25px;
     border: 3px;
     margin-top: 1.5%;
-    transition: filter .1s ease-in-out;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 }
-.logo:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
 
 .nav__links {
     list-style: none;
@@ -133,7 +126,7 @@ button:hover {
     max-width: 330px;
     max-height: 330px;
     height: auto; 
-    padding: 0px;
+    padding: 10px;
     border-radius: 20px;
     overflow: hidden;
     object-fit: contain;
@@ -143,7 +136,7 @@ button:hover {
 }
 
 .labels:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 }
 
 .projects_labels {
@@ -152,7 +145,7 @@ button:hover {
     max-width: 330px;
     max-height: 330px;
     height: auto; 
-    padding: 0px;
+    padding: 10px;
     border-radius: 20px;
     overflow: hidden;
     object-fit: contain;
@@ -162,7 +155,7 @@ button:hover {
 }
 
 .projects_labels:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 }
 
 #images{ text-align: center; }
@@ -333,6 +326,23 @@ h1 {
        display: none;
        opacity: 0;
     }
+
+    .logo {
+        cursor: pointer;
+        width: 100px;
+        margin-right: auto;
+        position: absolute;
+        left: 25px;
+        border: 3px;
+        margin-top: 1.5%;
+        transition: filter .1s ease-in-out;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    .logo:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
 }
 
 @media (max-width: 1140px) {
@@ -357,3 +367,22 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #000;  /* creates padding around scroll thumb */
 }
 
+
+/* Style all font awesome icons */
+.fa {
+    padding: 25px;
+    font-size: 35px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+
+#projects p {
+    padding-top: 5px;
+}
