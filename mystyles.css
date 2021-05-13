@@ -369,19 +369,32 @@ body::-webkit-scrollbar-thumb {
 
 
 /* Style all font awesome icons */
-.fa {
+.far {
     padding: 25px;
     font-size: 35px;
     width: 55px;
     text-align: center;
     text-decoration: none;
-  }
+}
   
-  /* Add a hover effect if you want */
-  .fa:hover {
+/* Add a hover effect if you want */
+.far:hover {
     opacity: 0.7;
-  }
+}
 
+
+.fab {
+    padding: 25px;
+    font-size: 35px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+/* Add a hover effect if you want */
+.fab:hover {
+    opacity: 0.7;
+}
 
 #projects p {
     padding-top: 5px;
