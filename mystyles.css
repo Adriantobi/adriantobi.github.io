@@ -139,6 +139,11 @@ button:hover {
     object-fit: contain;
     text-align: center;
     justify-content: center;
+    transition: all .2s ease-in-out; 
+}
+
+.labels:hover {
+    transform: scale(1.1);
 }
 
 .projects_labels {
@@ -153,6 +158,11 @@ button:hover {
     object-fit: contain;
     text-align: center;
     justify-content: center;
+    transition: all .2s ease-in-out; 
+}
+
+.projects_labels:hover {
+    transform: scale(1.1);
 }
 
 #images{ text-align: center; }
@@ -318,7 +328,7 @@ h1 {
       }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .contactIng {
        display: none;
        opacity: 0;
