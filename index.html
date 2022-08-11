@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Adrian Tobi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/base-styles.css">
+        <link rel="icon" href="/images/adrianBrowserIcon.png">
+        <script src="/js/dark-mode.js" async defer></script>
+        <script src="/js/logo-anim.js" async defer></script>
+        <script src="/js/toggles.js" async defer></script>
+    </head>
+    <body>        
+        <div id="body-section">
+            <div id="menu-section">
+                <div id="logo" onclick="window.open('index.html', '_self')" onmouseover="changeToTd()" onmouseout="changeToTobi()">ADRIAN<div id="last-name">TOBI</div></div>
+                <button id="btn-toggle">Toggle Dark-Mode</button>
+                <div id="collections-section">
+                  <a class="collection-option" href="collection1.html" onclick="mobileMenuGone()">Just Buildings</a>
+                  <a class="collection-option" href="collection2.html" onclick="mobileMenuGone()">Night Time Watchers</a>
+                </div>
+                <div id="more-options-section">
+                  <!--<a class="more-options-select" href="blog.html">Blog</a>-->
+                  <a class="more-options-select" href="about.html" onclick="mobileMenuGone()">About</a>
+                  <a class="more-options-select" href="https://instagram.com/adrian.td" target="_blank" onclick="mobileMenuGone()">Instagram</a>
+                  <a class="more-options-select" href="https://twitter.com/adriantdoav" target="_blank" onclick="mobileMenuGone()">Twitter</a>
+                  <a class="more-options-select" href="https://weibo.com/u/7696376222?ssl_rnd=1660044172.0373" target="_blank" onclick="mobileMenuGone()">Weibo</a>
+                </div>
+            </div>
+            <div id="mobile-menu-section">
+              <div id="logo-mobile" onclick="window.open('index.html', '_self'); mobileMenuGone()">ADRIAN<div id="last-name">TOBI</div></div>
+              <div id="mobile-menu-toggle" onclick="toggle('menu-section')">Menu</div>
+            </div>
+            <div id="content-section" onscroll="mobileMenuGone()">
+              <!-- Expanded image -->
+                <img id="expanded-image" onclick="removeImage(); bodyOverflowYScroll(); showAllImages()">
+                <ul id="gallery">
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg" alt="A Toyota Previa covered in graffiti" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg" alt="Interesting living room light through a window" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg" alt="Sara on a red bike" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg" alt="XOXO venue in between talks" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg" alt="Trees lit by green light during dusk" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg" alt="Portrait of Justin Pervorse" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05465_dtkwef.jpg" alt="Empty bike racks outside a hotel" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg" alt="Heavy rain on an intersection" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();;">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg" alt="Payam Rajabi eating peanut chicken" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg" alt="Portland skyline sunset" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg" alt="Interior at Nong's" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                        <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg" alt="A Toyota Previa covered in graffiti" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                   
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg" alt="Sara on a red bike" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg" alt="XOXO venue in between talks" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg" alt="Trees lit by green light during dusk" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg" alt="Portrait of Justin Pervorse" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg" alt="Heavy rain on an intersection" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg" alt="Payam Rajabi eating peanut chicken" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg" alt="Portland skyline sunset" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg" alt="Interior at Nong's" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                        <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg" alt="A Toyota Previa covered in graffiti" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg" alt="Interesting living room light through a window" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg" alt="Sara on a red bike" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg" alt="XOXO venue in between talks" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg" alt="Trees lit by green light during dusk" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg" alt="Portrait of Justin Pervorse" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                   
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg" alt="Heavy rain on an intersection" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg" alt="Payam Rajabi eating peanut chicken" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg" alt="Portland skyline sunset" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    <li>
+                      <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg" alt="Interior at Nong's" loading="lazy" onclick="myFunction(this); bodyOverflowYHidden(); removeAllImages();">
+                    </li>
+                    
+                    <!--  Adding an empty <li> here so the final photo doesn't stretch like crazy. Try removing it and see what happens!  -->
+                    <li></li>
+                  </ul>
+            </div>
+        </div>
+    </body>
+</html>
